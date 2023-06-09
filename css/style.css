@@ -43,14 +43,22 @@ body {
 }
 
 .content a {
-    color: #000000;
+    color: black;
     text-decoration: none;
-  }
+}
 
-  .content a:hover {
+.content a:hover {
+    text-decoration: underline;
+}
+
+span a {
+    color: black;
     text-decoration: none;
-  }
-  
+}
+
+span a:hover {
+    text-decoration: underline;
+}
 
 .container-element {
     display: flex;

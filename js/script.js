@@ -1,9 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
-    fetch('data.json')
+    fetch('json/data.json')
         .then(response => response.json())
         .then(data => {
             const info1 = document.getElementById('info1');
-            const info2 = document.getElementById('info2');
             const info3 = document.getElementById('info3');
             const info4 = document.getElementById('info4');
             const info5 = document.getElementById('info5');
@@ -15,13 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('email').textContent = data.email;
             } else {
                 info1.style.display = 'none';
-            }
-
-            if (data['add-to-contacts']) {
-                info2.style.display = 'flex';
-                document.getElementById('add-to-contacts').textContent = data['add-to-contacts'];
-            } else {
-                info2.style.display = 'none';
             }
 
             if (data['call-now'].trim() !== "") {
