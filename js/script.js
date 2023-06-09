@@ -20,18 +20,18 @@ window.addEventListener('DOMContentLoaded', () => {
             if (data['add-to-contacts']) {
                 info2.style.display = 'flex';
                 const addToContactsLink = document.getElementById('add-to-contacts').querySelector('a');
-                const addToContactsData = data['add-to-contacts'];
 
-                addToContactsLink.textContent = 'Add To Contacts';
-                addToContactsLink.href = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({
-                    "first_name": addToContactsData.firstName,
-                    "last_name": addToContactsData.lastName,
-                    "phone_numbers": [{ "value": addToContactsData.phone }],
-                    "email_addresses": [{ "value": addToContactsData.email }],
-                    "postal_addresses": [{ "street": addToContactsData.address }],
-                    "urls": [{ "value": addToContactsData.website }]
-                }))}`;
-                addToContactsLink.download = 'contact.vcf';
+                const firstName = encodeURIComponent(data.firstName);
+                const lastName = encodeURIComponent(data.lastName);
+                const role = encodeURIComponent(data.role);
+                const companyName = encodeURIComponent(data.companyName);
+                const phone = encodeURIComponent(data.phone);
+                const email = encodeURIComponent(data.email);
+                const website = encodeURIComponent(data.website);
+
+                const addToContactsURL = `https://yanislabbe.github.io/model-for-information/?label=Add%20To%20Contacts&firstName=${firstName}&lastName=${lastName}&role=${role}&companyName=${companyName}&phone=${phone}&email=${email}&website=${website}`;
+
+                addToContactsLink.href = addToContactsURL;
             } else {
                 info2.style.display = 'none';
             }
