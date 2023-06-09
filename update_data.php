@@ -13,7 +13,7 @@ foreach ($modifiedData as $key => $value) {
 }
 
 // Save the updated data back to data.json
-file_put_contents('data.json', json_encode($data, JSON_PRETTY_PRINT));
+file_put_contents('json/data.json', json_encode($data, JSON_PRETTY_PRINT));
 
 // Prepare the response data
 $response = array('success' => true, 'message' => 'Data updated successfully');
