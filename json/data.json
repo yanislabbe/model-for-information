@@ -1,16 +1,9 @@
 {
     "email": "johndoe@icloud.com",
-    "add-to-contacts": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "phone": "+1438349232",
-        "email": "johndoe@icloud.com",
-        "address": "123 Main St, City, Country",
-        "website": "https://www.example.com"
-    },
+    "add-to-contacts": "John Doe",
     "call-now": "+1438349232",
     "hours-of-operation": "9 AM - 5 PM",
-    "facebook": "https://www.facebook.com/example",
-    "instagram": "https://www.instagram.com/example",
-    "website": "https://www.example.com"
+    "facebook": "https:\/\/www.facebook.com\/example",
+    "instagram": "https:\/\/www.instagram.com\/example",
+    "website": "https:\/\/www.example.com"
 }
