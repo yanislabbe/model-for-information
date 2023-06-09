@@ -102,10 +102,6 @@ span a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        padding: 20px;
-    }
-
     .container {
         padding: 20px;
     }
