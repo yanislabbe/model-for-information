@@ -110,6 +110,7 @@ span a:hover {
     }
 
     .container {
+        width: 100%; /* Ajout de la propriété width */
         padding: 20px;
     }
 
@@ -121,3 +122,5 @@ span a:hover {
         font-size: 16px;
     }
 }
+
+
