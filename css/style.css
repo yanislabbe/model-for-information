@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 30px;
@@ -16,10 +16,26 @@ body {
 }
 
 .info {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.info::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    right: -50px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.info-last {
+
+    display: flex;
     align-items: center;
 }
 

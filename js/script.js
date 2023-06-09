@@ -11,17 +11,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
             if (data.email) {
                 info1.style.display = 'flex';
-                document.getElementById('email').textContent = data.email;
+                const emailLink = document.getElementById('email-link');
+                emailLink.textContent = data.email;
+                emailLink.href = 'mailto:' + data.email;
             } else {
                 info1.style.display = 'none';
             }
-
+            
             if (data['call-now'].trim() !== "") {
                 info3.style.display = 'flex';
-                document.getElementById('call-now').textContent = data['call-now'];
+                const callNowLink = document.getElementById('call-now-link');
+                callNowLink.textContent = data['call-now'];
+                callNowLink.href = 'tel:' + data['call-now'];
             } else {
                 info3.style.display = 'none';
             }
+            
 
             if (data['hours-of-operation']) {
                 info4.style.display = 'flex';
