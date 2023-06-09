@@ -99,3 +99,136 @@ span a:hover {
     border: 3px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Media Query pour iPhone 5/SE */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) {
+    .container {
+        padding: 30px;
+    }
+    
+    .label {
+        font-size: 20px;
+    }
+    
+    .content {
+        font-size: 16px;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Media Query pour iPhone 6/7/8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) {
+    .container {
+        padding: 40px;
+    }
+    
+    .label {
+        font-size: 22px;
+    }
+    
+    .content {
+        font-size: 18px;
+    }
+    
+    .profile-img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+/* Media Query pour iPhone 6/7/8 Plus */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) {
+    .container {
+        padding: 40px;
+    }
+    
+    .profile-img {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+/* Media Query pour iPhone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+        padding: 40px;
+    }
+    
+    .profile-img {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+/* Media Query pour iPhone XR/XS Max/11/11 Pro Max */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .container {
+        padding: 40px;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Media Query pour iPhone 12/12 Pro */
+@media only screen 
+  and (min-device-width: 390px) 
+  and (max-device-width: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+        padding: 40px;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Media Query pour iPhone 12 Mini */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 780px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+        padding: 40px;
+    }
+    
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Media Query pour iPhone 12 Pro Max */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+        padding: 40px;
+    }
+    
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+}
