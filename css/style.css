@@ -1,7 +1,7 @@
 body {
     font-family: Inter, sans-serif;
     margin: 0;
-    padding: 40px;
+    margin-top: 100px;
     background-color: #10243f;
 }
 
@@ -85,9 +85,7 @@ span a:hover {
     margin-right: 15px;
 }
 
-/* Ajout des Media Queries */
 @media screen and (max-width: 768px) {
-    /* Règles de style spécifiques pour les écrans d'une largeur maximale de 768px */
     .container {
         max-width: 100%;
         padding: 30px;
@@ -104,13 +102,11 @@ span a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    /* Règles de style spécifiques pour les écrans d'une largeur maximale de 480px */
     body {
         padding: 20px;
     }
 
     .container {
-        width: 100%; /* Ajout de la propriété width */
         padding: 20px;
     }
 
@@ -122,5 +118,3 @@ span a:hover {
         font-size: 16px;
     }
 }
-
-
